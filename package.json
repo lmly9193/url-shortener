@@ -1,13 +1,16 @@
 {
   "name": "url-shortener",
-  "version": "0.0.0",
+  "version": "1.1.0",
   "private": true,
   "scripts": {
     "deploy": "wrangler deploy",
     "dev": "wrangler dev",
-    "start": "wrangler dev"
+    "start": "wrangler dev",
+    "cf-typegen": "wrangler types"
   },
   "devDependencies": {
-    "wrangler": "^3.60.3"
+    "@cloudflare/workers-types": "^4.20240620.0",
+    "typescript": "^5.5.3",
+    "wrangler": "^3.63.2"
   }
 }
